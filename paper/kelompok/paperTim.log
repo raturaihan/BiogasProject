@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.7.21)  30 AUG 2021 19:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.7.21)  19 OCT 2021 20:42
 entering extended mode
-**"d:/Institut Teknologi Bandung/TA212201/TA212201004/kelompok/paperTim.tex"
-(d:/Institut Teknologi Bandung/TA212201/TA212201004/kelompok/paperTim.tex
+**"d:/Institut Teknologi Bandung/TA212201/TA212201014/paper/kelompok/paperTim.tex"
+(d:/Institut Teknologi Bandung/TA212201/TA212201014/paper/kelompok/paperTim.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-07-12> (C:\Program Files\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
@@ -358,26 +358,23 @@ Package pdftex.def Info: ./figures//skematikdiagram1.pdf , page1 used on input l
 
 
 ]
-<./figures//casing1.jpg, id=14, 252.945pt x 159.59625pt>
+<./figures//casing1.jpg, id=15, 252.945pt x 159.59625pt>
 File: ./figures//casing1.jpg Graphic file (type jpg)
 <use ./figures//casing1.jpg>
 Package pdftex.def Info: ./figures//casing1.jpg  used on input line 81.
 (pdftex.def)             Requested size: 232.19843pt x 146.50885pt.
-<./figures//casing2.jpg, id=15, 249.93375pt x 157.33781pt>
+<./figures//casing2.jpg, id=16, 249.93375pt x 157.33781pt>
 File: ./figures//casing2.jpg Graphic file (type jpg)
 <use ./figures//casing2.jpg>
 Package pdftex.def Info: ./figures//casing2.jpg  used on input line 82.
 (pdftex.def)             Requested size: 232.19843pt x 146.17859pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [2 <./figures//skematikdiagram1.pdf>]
-<./figures//gambaresp32.png, id=21, 326.72063pt x 275.52937pt>
+<./figures//gambaresp32.png, id=22, 326.72063pt x 275.52937pt>
 File: ./figures//gambaresp32.png Graphic file (type png)
 <use ./figures//gambaresp32.png>
 Package pdftex.def Info: ./figures//gambaresp32.png  used on input line 92.
 (pdftex.def)             Requested size: 232.19843pt x 195.8164pt.
-<./figures//obddiagram.png, id=23, 361.35pt x 205.5178pt>
+<./figures//obddiagram.png, id=24, 361.35pt x 205.5178pt>
 File: ./figures//obddiagram.png Graphic file (type png)
 <use ./figures//obddiagram.png>
 Package pdftex.def Info: ./figures//obddiagram.png  used on input line 113.
@@ -387,13 +384,13 @@ Package pdftex.def Info: ./figures//obddiagram.png  used on input line 113.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3 <./figures//casing1.jpg> <./figures//casing2.jpg> <./figures//gambaresp32.png>] (figures/skematikdiagram2.pdf_tex
-<./figures//skematikdiagram2.pdf, id=29, page=1, 7543.18124pt x 2853.91219pt>
+<./figures//skematikdiagram2.pdf, id=30, page=1, 7543.18124pt x 2853.91219pt>
 File: ./figures//skematikdiagram2.pdf Graphic file (type pdf)
 <use ./figures//skematikdiagram2.pdf, page 1>
 Package pdftex.def Info: ./figures//skematikdiagram2.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 252.0pt x 95.32468pt.
 ) [4 <./figures//obddiagram.png>]
-<./figures//realtimeon.png, id=34, 144.54pt x 300.3722pt>
+<./figures//realtimeon.png, id=35, 144.54pt x 300.3722pt>
 File: ./figures//realtimeon.png Graphic file (type png)
 <use ./figures//realtimeon.png>
 Package pdftex.def Info: ./figures//realtimeon.png  used on input line 178.
@@ -403,12 +400,12 @@ Package pdftex.def Info: ./figures//realtimeon.png  used on input line 178.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <./figures//skematikdiagram2.pdf>]
-<./figures//notif1.png, id=61, 132.495pt x 274.77657pt>
+<./figures//notif1.png, id=62, 132.495pt x 274.77657pt>
 File: ./figures//notif1.png Graphic file (type png)
 <use ./figures//notif1.png>
 Package pdftex.def Info: ./figures//notif1.png  used on input line 189.
 (pdftex.def)             Requested size: 77.39685pt x 160.51093pt.
-<./figures//notif2.png, id=62, 159.59625pt x 109.91063pt>
+<./figures//notif2.png, id=63, 159.59625pt x 109.91063pt>
 File: ./figures//notif2.png Graphic file (type png)
 <use ./figures//notif2.png>
 Package pdftex.def Info: ./figures//notif2.png  used on input line 190.
@@ -427,17 +424,17 @@ Before submitting the final camera ready copy, remember to:
 
 [6 <./figures//realtimeon.png> <./figures//notif1.png> <./figures//notif2.png>] (paperTim.aux) ) 
 Here is how much of TeX's memory you used:
- 6212 strings out of 478870
- 108275 string characters out of 2858669
- 442536 words of memory out of 3000000
- 23987 multiletter control sequences out of 15000+600000
- 442042 words of font info for 102 fonts, out of 8000000 for 9000
+ 6222 strings out of 478870
+ 108456 string characters out of 2858669
+ 441535 words of memory out of 3000000
+ 23996 multiletter control sequences out of 15000+600000
+ 442074 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,11n,94p,1594b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paperTim.pdf (6 pages, 735645 bytes).
+ 94i,14n,94p,1600b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paperTim.pdf (6 pages, 744082 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
