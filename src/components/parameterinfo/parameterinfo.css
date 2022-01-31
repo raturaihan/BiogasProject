@@ -1,0 +1,39 @@
+.parameter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parameterItem{
+    flex:1;
+    margin: 50px 80px;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px -1px 9px -2px #000000; 
+    box-shadow: -1px -1px 9px -2px #000000;
+}
+
+.parameterTitle{
+    font-size: 20px;
+}
+
+.nilaiParameter{
+    margin:10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.Data{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.tanggal{
+    font-size: 15px;
+    color: gray;
+}
+
+.waktu{
+    font-size: 15px;
+    color: gray;
+}

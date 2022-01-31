@@ -1,0 +1,26 @@
+.chartSuhu{
+    margin: 10px 78px;
+    padding: 20px;
+    -webkit-box-shadow: -1px -1px 9px -2px #000000; 
+    box-shadow: -1px -1px 9px -2px #000000;
+}
+
+.chartpH{
+    margin: 50px 78px;
+    padding: 20px;
+    -webkit-box-shadow: -1px -1px 9px -2px #000000; 
+    box-shadow: -1px -1px 9px -2px #000000;
+}
+
+.chartTekanan{
+    margin: 50px 78px;
+    padding: 20px;
+    -webkit-box-shadow: -1px -1px 9px -2px #000000; 
+    box-shadow: -1px -1px 9px -2px #000000;
+}
+
+.chartTitle{
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
