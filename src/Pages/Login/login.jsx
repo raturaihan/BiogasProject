@@ -1,7 +1,6 @@
 import {Grid,Paper,TextField,Button, Typography,Link} from '@material-ui/core';
 import { Alert } from '@mui/material';
 import styled from 'styled-components';
-import bgImg from '../../asset/image.JPEG';
 import {Nav} from "../navbar";
 import axios from 'axios';
 
@@ -102,7 +101,7 @@ export default function Login() {
 
 
 const Wrapper = styled.div`
-  background-image: url(${bgImg});
+  background-image: url("https://frontendimages014.s3.ap-southeast-1.amazonaws.com/image.JPEG");
   background-attachment: fixed;
   background-size: cover;
   backgroundPosition: 'right center';
