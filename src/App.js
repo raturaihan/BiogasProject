@@ -9,6 +9,7 @@ import Graphic from "./Pages/Graphic/Graphic";
 import Logdata from "./Pages/LogData/Logdata";
 import Info from "./Pages/Info/info";
 import Login from "./Pages/Login/login";
+import "./App.css";
 
 const PrivateRoute = ({ children }) => {
   const isAuthenticated = localStorage.getItem("dev_id");
