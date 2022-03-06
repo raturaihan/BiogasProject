@@ -1,12 +1,28 @@
 import styled from 'styled-components'
 import * as React from 'react';
-import {Paper,Table,TableBody,TableCell,TableContainer,TableHead,TablePagination,TableRow} from '@mui/material';
+import {Paper,Table,TableBody,TableCell,TableContainer,TableHead,TablePagination,TableRow, Typography} from '@mui/material';
 import {Grid, Tooltip} from "@material-ui/core"
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import { withStyles } from "@material-ui/core/styles";
 
-export default function Tabel() {
-    const [page, setPage] = React.useState(0);
-    const [rowsPerPage, setRowsPerPage] = React.useState(10);
+
+const RedText = withStyles({
+  root: {
+    color: "red",
+    fontStyle: "bold"
+  }
+})(Typography);
+
+export default function Tabel({data}) {
+  console.log(data);
+
+  const [page, setPage] = React.useState(0);
+  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+
+    function formatDate(string){
+      var options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return new Date(string).toLocaleDateString([],options);
+    }
   
     const handleChangePage = (event, newPage) => {
       setPage(newPage);
@@ -18,54 +34,41 @@ export default function Tabel() {
     };
 
     const columns = [
-        { id: 'tanggal', label: 'Tanggal', minWidth: 170 },
-        { id: 'waktu', label: 'Waktu', minWidth: 100 },
+        { id: 'time', 
+          label: 'Tanggal', 
+          width: 100 , 
+          format: (value) => formatDate(value.slice(0,10))
+        },
+        { id: 'time', 
+          label: 'Waktu', 
+          width: 100,
+          format: (value) => value.slice(11,16)
+         },
         {
-          id: 'suhu',
+          id: 'temperatureValue',
           label: 'Suhu\u00a0Slurry',
-          minWidth: 170,
+          width: 100,
           align: 'right',
-          format: (value) => value.toLocaleString('en-US'),
+          format: (value) => value > 35 || value <25 ? <RedText>{value}</RedText> : value,
         },
         {
-          id: 'pH',
+          id: 'phValue',
           label: 'pH\u00a0Slurry',
-          minWidth: 170,
+          width: 100,
           align: 'right',
-          format: (value) => value.toLocaleString('en-US'),
+          format: (value) => value > 7 || value < 6.8 ? <RedText>{value}</RedText> : value,
         },
         {
-          id: 'tekanan',
+          id: 'pressureValue',
           label: 'Tekanan\u00a0Gas',
-          minWidth: 170,
+          width: 100,
           align: 'right',
-          format: (value) => value.toFixed(2),
+          format: (value) => value > 2800 ? <RedText>{value}</RedText> : value,
         },
-      ];
-      
-      function createData(tanggal, waktu, suhu, pH, tekanan) {
-        return { tanggal, waktu, suhu, pH, tekanan,};
-      }
-      
-      const rows = [
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
-        createData('21 November 2021', '13.00', 29.8, 6.8, 2000),
       ];
       
     return (
-        <div ClassName="Tabel">
+        <div className="Tabel">
             <DataLog>
             <Grid item xs={12} sm container>
               <Grid item xs container direction="column" spacing={2}>
@@ -76,7 +79,7 @@ export default function Tabel() {
                 <Tooltip title={<div>
                                   <div>Suhu Normal: 25 - 35 C </div>
                                   <div>pH Normal: 6.8 - 7</div>
-                                  <div>Tekanan Gas Normal: 0 - 2.8 KPa</div>
+                                  <div>Tekanan Gas Normal: 0 - 2800 Pa</div>
                                 </div>}>
                 <InfoOutlinedIcon color="disabled" />
                 </Tooltip>
@@ -99,18 +102,19 @@ export default function Tabel() {
                   </TableRow>
               </TableHead>
               <TableBody>
-                  {rows
+                  {data
                   .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                   .map((row) => {
                       return (
                       <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
                           {columns.map((column) => {
-                          const value = row[column.id];
+                          const value = row["device_data"][column.id];
                           return (
                               <TableCell key={column.id} align={column.align}>
-                              {column.format && typeof value === 'number'
+                              {column.format
                                   ? column.format(value)
                                   : value}
+                              {/* {value} */}
                               </TableCell>
                           );
                           })}
@@ -123,7 +127,7 @@ export default function Tabel() {
           <TablePagination
               rowsPerPageOptions={[10, 25]}
               component="div"
-              count={rows.length}
+              count={data.length}
               rowsPerPage={rowsPerPage}
               page={page}
               onPageChange={handleChangePage}

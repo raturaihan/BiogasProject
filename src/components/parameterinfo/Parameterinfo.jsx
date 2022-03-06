@@ -3,15 +3,23 @@ import {Chip, Tooltip, Grid} from "@material-ui/core"
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
-export default function Parameterinfo() {
+export default function Parameterinfo({data}) {
+console.log(data);
+
+  function formatDate(string){
+    var options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(string).toLocaleDateString([],options);
+}
+
     return (
         <div className="parameter">
-            <div className="parameterItem">
+            <div className="parameterItem"  >  
                 <Grid item xs={12} sm container>
+                {data[data.length-1].device_data.temperatureStatus === 1?
                     <Grid item xs container direction="column" spacing={2}>
                     <item>
                         <Chip icon={<WarningAmberIcon color="warning"/>} label="Warning" color="#FFFF00" />
-                    </item></Grid>
+                    </item></Grid>: <></>}
                     <Grid item>
                     <item>
                         <Tooltip title={<div>
@@ -23,17 +31,18 @@ export default function Parameterinfo() {
                 </Grid>
                 <div className="parameterTitle">Suhu Slurry</div>
                 <div className="nilaiParameter">
-                    <span className="Data">33.25 C</span>
+                    <span className="Data"> {data[data.length-1].device_data.temperatureValue} C</span>
                 </div>
-                <div><span className="tanggal">5 November 2021</span></div>
-                <span className="waktu">12.00</span>
+                <div><span className="tanggal">{formatDate(data[data.length-1].device_data.time.slice(0,10))}</span></div>
+                <span className="waktu"> {data[data.length-1].device_data.time.slice(11,16)}</span>
             </div> 
             <div className="parameterItem">
                 <Grid item xs={12} sm container>
+                        {data[data.length-1].device_data.phStatus === 1?
                         <Grid item xs container direction="column" spacing={2}>
                         <item>
                             <Chip icon={<WarningAmberIcon color="warning"/>} label="Warning" color="warning" />
-                        </item></Grid>
+                        </item></Grid>: <></>}
                         <Grid item>
                         <item>
                             <Tooltip title={<div>
@@ -45,17 +54,19 @@ export default function Parameterinfo() {
                     </Grid>
                 <span className="parameterTitle">pH Slurry</span>
                 <div className="nilaiParameter">
-                    <span className="Data">7.1</span>
+                    <span className="Data">{data[data.length-1].device_data.phValue}</span>
                 </div>
-                <div><span className="tanggal">5 November 2021</span></div>
-                <span className="waktu">12.00</span>
+                <div><span className="tanggal">{formatDate(data[data.length-1].device_data.time.slice(0,10))}</span></div>
+                <span className="waktu">{data[data.length-1].device_data.time.slice(11,16)}</span>
             </div> 
             <div className="parameterItem">
                 <Grid item xs={12} sm container>
+                {data[data.length-1].device_data.pressureStatus === 1?
                         <Grid item xs container direction="column" spacing={2}>
                         <item>
                             <Chip icon={<WarningAmberIcon color="warning"/>} label="Warning" color="#FFFF00" />
                         </item></Grid>
+                : <></>}
                         <Grid item>
                         <item>
                             <Tooltip title={<div>
@@ -67,10 +78,10 @@ export default function Parameterinfo() {
                     </Grid>
                 <span className="parameterTitle">Tekanan Gas</span>
                 <div className="nilaiParameter">
-                    <span className="Data">75 KPa</span>
+                    <span className="Data">{data[data.length-1].device_data.pressureValue}</span>
                 </div>
-                <div><span className="tanggal">5 November 2021</span></div>
-                <span className="waktu">12.00</span>
+                <div><span className="tanggal">{formatDate(data[data.length-1].device_data.time.slice(0,10))}</span></div>
+                <span className="waktu">{data[data.length-1].device_data.time.slice(11,16)}</span>
             </div> 
         </div>
     )
