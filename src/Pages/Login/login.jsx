@@ -52,7 +52,7 @@ export default function Login() {
       <h1>SmartBiogas</h1>
     </Nav> 
     <Wrapper >
-      <Paper elevation={8} style={paperStyle}>
+      <PaperStyle>
         <Grid align='center' >
           <h2>Masuk Akun</h2>
         </Grid>
@@ -93,7 +93,7 @@ export default function Login() {
           </Link>
         </Typography>
         </Grid>
-      </Paper>
+      </PaperStyle>
     </Wrapper>
     </Grid> 
   );
@@ -101,14 +101,49 @@ export default function Login() {
 
 
 const Wrapper = styled.div`
-  background-image: url("https://frontendimages014.s3.ap-southeast-1.amazonaws.com/image.JPEG");
-  background-attachment: fixed;
-  background-size: cover;
-  backgroundPosition: 'right center';
-  background-repeat: no-repeat;
-  width: 1360px;
-  height: 450px;
+  @media (min-width: 1024px){
+    background-image: url("https://frontendimages014.s3.ap-southeast-1.amazonaws.com/image.JPEG");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1360px;
+    height: 450px;
+ }
+  @media (max-width: 1023px){
+    background-color: #cbe8ba;
+    height: 1000px;
+    width: 100%;
+ }
 `;
 
-const paperStyle={backgroundColor:'#cbe8ba',padding:20, height:'66.5vh',width:355,margin:"8px 0px"}
+const PaperStyle = styled.div`
+  height: 410px;
+  width: 355px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #cbe8ba;
+  -webkit-box-shadow: -1px -1px 9px -2px #000000; 
+  box-shadow: -1px -1px 5px -2px #000000;
+  @media (max-width: 1023px){
+    background-color: white;
+    height: 300px;
+    width: 255px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+`
+// const paperStyle={
+//     margin:"8px 0px",
+//     backgroundColor:'#cbe8ba',
+//     width: '355px',
+//     height: '410px',
+//     padding:20,
+//     ['@media (max-width:700px)']: { 
+//       margin: "auto",
+//       backgroundColor:'#cbe8ba',
+//       width: '100px',
+//       height: '150px'
+//     }
+// }
+
 const btnStyle={margin:"8px 0"}
