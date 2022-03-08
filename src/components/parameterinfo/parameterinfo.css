@@ -13,6 +13,8 @@
     box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+    
+
 }
 
 .parameterItem2{
@@ -56,18 +58,12 @@
         margin: 40px 15px;
         padding: 15px;
         border-radius: 10px;
-        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
-        -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
-        -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     }
     .parameterItem2{
         flex:1;
         margin: 40px 15px;
         padding: 15px;
         border-radius: 10px;
-        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
-        -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
-        -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     }
     .parameterTitle{
         font-size: 15px;

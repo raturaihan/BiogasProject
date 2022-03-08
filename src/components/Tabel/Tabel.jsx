@@ -142,8 +142,14 @@ export default function Tabel({data}) {
 const DataLog=styled.div`
   margin: 30px 78px;
   padding: 20px;
-  -webkit-box-shadow: -1px -1px 9px -2px #000000; 
-  box-shadow: -1px -1px 9px -2px #000000;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+  background-color: #F9FCF8;
+  @media (max-width: 767px){
+    margin: 30px 30px;
+    padding: 10px;
+  }
 `;
 
 const DataInfo=styled.div`

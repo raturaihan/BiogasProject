@@ -4,7 +4,7 @@ import {NavLink as Link} from 'react-router-dom'
 
 export const Nav = styled.nav`
   background-color:#cbe8ba;
-  height: 80px;
+  height: 60px;
   display: flexbox;
   position: sticky;
   z-index: 10;
@@ -22,7 +22,7 @@ export const NavLink = styled(Link)`
     cursor: PointerEvent;
 
     &.active{
-        color: black;
+      color:#243e16;
     }
 `
 export const NavMenu = styled.div`
@@ -42,11 +42,4 @@ export const Header = styled.h1`
     @media (max-width: 1023px){
         display: none;
     }
-`
-
-export const Btn = styled.button`
-    position: absolute;
-    right: 15px;
-    border-radius: 20px;
-    background-color: white;
 `

@@ -4,6 +4,7 @@
     box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+    background-color: #F9FCF8;
 }
 
 .chartpH{
@@ -12,6 +13,7 @@
     box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+    background-color: #F9FCF8;
 }
 
 .chartTekanan{
@@ -20,6 +22,7 @@
     box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+    background-color: #F9FCF8;
 }
 
 .chartTitle{
@@ -32,22 +35,13 @@
     .chartSuhu{
         margin: 10px 30px;
         padding: 10px;
-        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
-        -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
-        -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     }
     .chartpH{
         margin: 50px 30px;
         padding: 10px;
-        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
-        -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
-        -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     }
     .chartTekanan{
         margin: 50px 30px;
         padding: 10px;
-        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
-        -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
-        -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
     }
 }

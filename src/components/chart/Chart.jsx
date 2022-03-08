@@ -1,6 +1,6 @@
 import "./chart.css";
 import { useState, useEffect } from "react";
-import { LineChart, XAxis, Line, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
+import { LineChart, XAxis, YAxis, Line, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
 
 export default function Chart({data}) {
 
@@ -60,8 +60,9 @@ export default function Chart({data}) {
             <h3 className="chartTitle">Suhu Slurry</h3>
             <ResponsiveContainer width="100%" aspect={4/1}>
                 <LineChart data={dataTemperature}>
-                    <XAxis dataKey="Waktu" stroke="#5550bd"/>
-                    <Line type="monotone" dataKey="Temperature" stroke="#5550bd"/>
+                    <XAxis dataKey="Waktu" stroke="#355E3B"/>
+                    <YAxis stroke="#355E3B"/>
+                    <Line type="monotone" dataKey="Temperature" stroke="#008080"/>
                     <Tooltip/>
                     <CartesianGrid stroke="#e0dfdf" strokeDasharray="5 5"/>
                 </LineChart>
@@ -71,8 +72,9 @@ export default function Chart({data}) {
         <h3 className="chartTitle">pH Slurry</h3>
             <ResponsiveContainer width="100%" aspect={4/1}>
                 <LineChart data={datapH}>
-                    <XAxis dataKey="Waktu" stroke="#5550bd"/>
-                    <Line type="monotone" dataKey="pH" stroke="#5550bd"/>
+                    <XAxis dataKey="Waktu" stroke="#355E3B"/>
+                    <YAxis stroke="#355E3B"/>
+                    <Line type="monotone" dataKey="pH" stroke="#008080"/>
                     <Tooltip/>
                     <CartesianGrid stroke="#e0dfdf" strokeDasharray="5 5"/>
                 </LineChart>
@@ -82,8 +84,9 @@ export default function Chart({data}) {
             <h3 className="chartTitle">Tekanan Gas</h3>
             <ResponsiveContainer width="100%" aspect={4/1}>
                 <LineChart data={dataPressure}>
-                    <XAxis dataKey="Waktu" stroke="#5550bd"/>
-                    <Line type="monotone" dataKey="Pressure" stroke="#5550bd"/>
+                    <XAxis dataKey="Waktu" stroke="#355E3B"/>
+                    <YAxis stroke="#355E3B"/>
+                    <Line type="monotone" dataKey="Pressure" stroke="#008080"/>
                     <Tooltip/>
                     <CartesianGrid stroke="#e0dfdf" strokeDasharray="5 5"/>
                 </LineChart>

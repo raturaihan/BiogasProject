@@ -2,6 +2,8 @@ import "./parameterinfo.css"
 import {Chip, Tooltip, Grid} from "@material-ui/core"
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import ChipDesk from "./ChipDesk"
+import ChipMob from "./ChipMob"
 
 export default function Parameterinfo({data}) {
 console.log(data);
@@ -41,7 +43,8 @@ console.log(data);
                         {data[data.length-1].device_data.phStatus === 1?
                         <Grid item xs container direction="column" spacing={2}>
                         <item>
-                            <Chip icon={<WarningAmberIcon color="warning"/>} label="Warning" color="warning" />
+                            <ChipDesk icon={<WarningAmberIcon color="warning"/>} label="Warning" color="warning" />
+                            <ChipMob icon={<WarningAmberIcon color="warning"/>}  color="warning" />
                         </item></Grid>: <></>}
                         <Grid item>
                         <item>

@@ -1,5 +1,5 @@
 import React from 'react'
-import{Nav, NavLink, NavMenu, Header, Btn} from "./NavbarElements"
+import{Nav, NavLink, NavMenu, Header} from "./NavbarElements"
 import { useNavigate } from 'react-router-dom';
 import LogoutIcon from '@mui/icons-material/Logout';
 import Buttonlog from "./Buttonlog"
@@ -19,10 +19,10 @@ const Navbar = () => {
             <NavMenu>
                 <Header>SmartBiogas</Header>
                 <NavLink to="/graphic">
-                    Grafik
+                    GRAFIK
                 </NavLink>
                 <NavLink to="/logdata">
-                    Data Historis
+                    DATA HISTORIS
                 </NavLink>
                 <NavLink to="/">
                     <Buttonlog startIcon={<LogoutIcon />} type='submit' variant='outlined' onClick={handleSubmit}>Log Out</Buttonlog>

@@ -1,11 +1,9 @@
 import React from 'react'
-import {Grid,Paper,Typography,Link} from '@material-ui/core'
+import {Grid,Typography,Link} from '@material-ui/core'
 import {Nav} from "../navbar"
 import styled from 'styled-components';
 
 const Signup=()=>{
-    const paperStyle={padding:20, height:'62.5vh',width:355,margin:"5px auto"}
-    const backgroundStyle={backgroundColor:'#cbe8ba',padding:10, height:'70vh',width:'100%',margin:"10px auto"}
     return(
         <Grid>
         <Nav>
@@ -39,8 +37,9 @@ const PaperStyle = styled.div`
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  -webkit-box-shadow: -1px -1px 9px -2px #000000; 
-  box-shadow: -1px -1px 3px -2px #000000;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
   @media (max-width: 1023px){
     background-color: white;
     height: 300px;

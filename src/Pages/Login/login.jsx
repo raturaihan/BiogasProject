@@ -1,4 +1,4 @@
-import {Grid,Paper,TextField,Button, Typography,Link} from '@material-ui/core';
+import {Grid,TextField,Button,Typography,Link} from '@material-ui/core';
 import { Alert } from '@mui/material';
 import styled from 'styled-components';
 import {Nav} from "../navbar";
@@ -82,7 +82,6 @@ export default function Login() {
         </Grid>
         <Button 
           type='submit' 
-          sx={{color:"green"}} 
           variant='contained' 
           style={btnStyle} 
           onClick={handleSubmit}
@@ -122,8 +121,9 @@ const PaperStyle = styled.div`
   padding: 20px;
   border-radius: 5px;
   background-color: #cbe8ba;
-  -webkit-box-shadow: -1px -1px 9px -2px #000000; 
-  box-shadow: -1px -1px 5px -2px #000000;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
   @media (max-width: 1023px){
     background-color: white;
     height: 300px;
@@ -132,18 +132,4 @@ const PaperStyle = styled.div`
     margin-right: auto;
   }
 `
-// const paperStyle={
-//     margin:"8px 0px",
-//     backgroundColor:'#cbe8ba',
-//     width: '355px',
-//     height: '410px',
-//     padding:20,
-//     ['@media (max-width:700px)']: { 
-//       margin: "auto",
-//       backgroundColor:'#cbe8ba',
-//       width: '100px',
-//       height: '150px'
-//     }
-// }
-
-const btnStyle={margin:"8px 0"}
+const btnStyle={margin:"8px 12px", color: "black", backgroundColor: "#B6C59A", fontWeight:"bold"}

@@ -30,7 +30,6 @@ const Logdata=()=>{
     console.log(value);
     const [isFetched, setIsFetched] = useState(false);
     const [dataParameter, setDataParameter] = useState([]);
-    //const [dateValue, setDateValue] = React.useState(new Date());
 
     const fetchData=(value)=>{
         const state=localStorage.getItem('dev_id');
