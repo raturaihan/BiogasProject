@@ -2,15 +2,27 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    overflow-x: scroll;
 }
 
 .parameterItem{
     flex:1;
     margin: 50px 80px;
     padding: 20px;
-    border-radius: 5px;
-    -webkit-box-shadow: -1px -1px 9px -2px #000000; 
-    box-shadow: -1px -1px 9px -2px #000000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+}
+
+.parameterItem2{
+    flex:1;
+    margin: 50px 80px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
 }
 
 .parameterTitle{
@@ -36,4 +48,49 @@
 .waktu{
     font-size: 15px;
     color: gray;
+}
+
+@media screen and (max-width: 1023px) {
+    .parameterItem{
+        flex:1;
+        margin: 40px 15px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+    }
+    .parameterItem2{
+        flex:1;
+        margin: 40px 15px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+    }
+    .parameterTitle{
+        font-size: 15px;
+    }
+    
+    .nilaiParameter{
+        margin:5px 0px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .Data{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .tanggal{
+        font-size: 10px;
+        color: gray;
+    }
+    
+    .waktu{
+        font-size: 10px;
+        color: gray;
+    }
 }

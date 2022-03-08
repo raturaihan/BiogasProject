@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import {NavLink as Link} from 'react-router-dom'
 
 
-
 export const Nav = styled.nav`
   background-color:#cbe8ba;
   height: 80px;
@@ -38,10 +37,16 @@ export const NavMenu = styled.div`
 export const Header = styled.h1`
     position: absolute;
     left: 10px;
-    color:#243e16
+    color:#243e16;
+    display: block;
+    @media (max-width: 1023px){
+        display: none;
+    }
 `
 
-export const Btn = styled.div`
+export const Btn = styled.button`
     position: absolute;
     right: 15px;
+    border-radius: 20px;
+    background-color: white;
 `

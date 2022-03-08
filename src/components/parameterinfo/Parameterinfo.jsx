@@ -59,7 +59,7 @@ console.log(data);
                 <div><span className="tanggal">{formatDate(data[data.length-1].device_data.time.slice(0,10))}</span></div>
                 <span className="waktu">{data[data.length-1].device_data.time.slice(11,16)}</span>
             </div> 
-            <div className="parameterItem">
+            <div className="parameterItem2">
                 <Grid item xs={12} sm container>
                 {data[data.length-1].device_data.pressureStatus === 1?
                         <Grid item xs container direction="column" spacing={2}>

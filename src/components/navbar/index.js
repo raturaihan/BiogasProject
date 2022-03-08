@@ -1,7 +1,9 @@
 import React from 'react'
 import{Nav, NavLink, NavMenu, Header, Btn} from "./NavbarElements"
-import {Button} from '@material-ui/core'
 import { useNavigate } from 'react-router-dom';
+import LogoutIcon from '@mui/icons-material/Logout';
+import Buttonlog from "./Buttonlog"
+import IconButtonlog from "./Buttonlogmob"
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -23,9 +25,8 @@ const Navbar = () => {
                     Data Historis
                 </NavLink>
                 <NavLink to="/">
-                    <Btn>
-                        <Button type='submit' color='success' variant='contained' onClick={handleSubmit}>Log Out</Button>
-                    </Btn>
+                    <Buttonlog startIcon={<LogoutIcon />} type='submit' variant='outlined' onClick={handleSubmit}>Log Out</Buttonlog>
+                    <IconButtonlog aria-label="logout" size="medium" onClick={handleSubmit}><LogoutIcon /></IconButtonlog>
                 </NavLink>
             </NavMenu>
          </Nav>  
