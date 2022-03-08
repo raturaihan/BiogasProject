@@ -80,7 +80,7 @@ export default function Tabel({data}) {
                                   <div>Suhu Normal: 25 - 35 C </div>
                                   <div>pH Normal: 6.8 - 7</div>
                                   <div>Tekanan Gas Normal: 0 - 2800 Pa</div>
-                                </div>}>
+                                </div>}enterTouchDelay={0}>
                 <InfoOutlinedIcon color="disabled" />
                 </Tooltip>
               </DataInfo></item>

@@ -26,7 +26,7 @@ console.log(data);
                     <item>
                         <Tooltip title={<div>
                                             <div>25 - 35 C : Normal</div>
-                                        </div>}>
+                                        </div>} enterTouchDelay={0}>
                             <InfoOutlinedIcon color="disabled" />
                         </Tooltip>
                     </item></Grid>
@@ -50,7 +50,7 @@ console.log(data);
                         <item>
                             <Tooltip title={<div>
                                                 <div>6.8 - 7 : Normal</div>
-                                            </div>}>
+                                            </div>} enterTouchDelay={0}>
                                 <InfoOutlinedIcon color="disabled" />
                             </Tooltip>
                         </item></Grid>
@@ -74,7 +74,7 @@ console.log(data);
                         <item>
                             <Tooltip title={<div>
                                                 <div> 0 - 2.8 KPa : Normal</div>
-                                            </div>}>
+                                            </div>} enterTouchDelay={0}>
                                 <InfoOutlinedIcon color="disabled" />
                             </Tooltip>
                         </item></Grid>
