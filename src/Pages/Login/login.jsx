@@ -38,8 +38,7 @@ export default function Login() {
         setAlert(true);
       }
     })
-    .catch((err)=>{ // if error (id not found or the sort)
-      // console.log(err.response.data);
+    .catch((err)=>{ // if error (iID/password not found/ not match)
       // alert the user
       setAlert(true);
     })
