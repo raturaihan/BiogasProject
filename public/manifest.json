@@ -8,27 +8,27 @@
     "start_url": "/",
     "icons": [
         {
-            "src": "logo192.png",
+            "src": "https://frontendimages014.s3.ap-southeast-1.amazonaws.com/logo192.png",
             "sizes":"192x192",
             "type": "image/png"
         },
         {
-            "src": "logo256.png",
+            "src": "https://frontendimages014.s3.ap-southeast-1.amazonaws.com/logo256.png",
             "sizes":"256x256",
             "type": "image/png"
         },
         {
-            "src": "logo384.png",
+            "src": "https://frontendimages014.s3.ap-southeast-1.amazonaws.com/logo384.png",
             "sizes":"384x384",
             "type": "image/png"
         },
         {
-            "src": "logo512.png",
+            "src": "https://frontendimages014.s3.ap-southeast-1.amazonaws.com/logo512.png",
             "sizes":"512x512",
             "type": "image/png"
         },
         {
-            "src":"maskable.png",
+            "src":"https://frontendimages014.s3.ap-southeast-1.amazonaws.com/maskable.png",
             "sizes": "192x192",
             "type":"image/png",
             "purpose":"any maskable"
