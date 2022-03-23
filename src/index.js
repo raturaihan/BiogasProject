@@ -11,3 +11,9 @@ ReactDOM.render(
 );
 
 serviceWorkerRegistration.register();
+
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/serviceWorkerRegistration.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
