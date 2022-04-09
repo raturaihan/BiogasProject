@@ -33,14 +33,14 @@ export default function Chart({data}) {
     setDataTemperature(data.reverse().map(object => (
       {
         Waktu: object.device_data.time.slice(11,16),
-        Temperature: object.device_data.temperatureValue,
+        Temperature: object.device_data.temperatureValue.toFixed(2),
       } 
     )));
 
     setDatapH(data.reverse().map(object => (
       {
         Waktu: object.device_data.time.slice(11,16),
-        pH: object.device_data.phValue,
+        pH: object.device_data.phValue.toFixed(2),
       } 
     )));
 
@@ -48,7 +48,7 @@ export default function Chart({data}) {
     setDataPressure(data.reverse().map(object => (
       {
         Waktu: object.device_data.time.slice(11,16),
-        Pressure: object.device_data.pressureValue,
+        Pressure: object.device_data.pressureValue.toFixed(2),
       }
     )));
   }, [])

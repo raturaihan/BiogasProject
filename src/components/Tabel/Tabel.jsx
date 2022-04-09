@@ -49,21 +49,21 @@ export default function Tabel({data}) {
           label: 'Suhu\u00a0Slurry',
           width: 100,
           align: 'right',
-          format: (value) => value > 35 || value <25 ? <RedText>{value}</RedText> : value,
+          format: (value) => value > 35 || value <20 ? <RedText>{value.toFixed(2)}</RedText> : value.toFixed(2),
         },
         {
           id: 'phValue',
           label: 'pH\u00a0Slurry',
           width: 100,
           align: 'right',
-          format: (value) => value > 7 || value < 6.8 ? <RedText>{value}</RedText> : value,
+          format: (value) => value > 8.2 || value < 6.2 ? <RedText>{value.toFixed(2)}</RedText> : value.toFixed(2),
         },
         {
           id: 'pressureValue',
           label: 'Tekanan\u00a0Gas',
           width: 100,
           align: 'right',
-          format: (value) => value > 2800 ? <RedText>{value}</RedText> : value,
+          format: (value) => value < 0 || value > 7845 ? <RedText>{value.toFixed(2)}</RedText> : value.toFixed(2),
         },
       ];
       
@@ -77,9 +77,9 @@ export default function Tabel({data}) {
               <item>
               <DataInfo>
                 <Tooltip title={<div>
-                                  <div>Suhu Normal: 25 - 35 C </div>
-                                  <div>pH Normal: 6.8 - 7</div>
-                                  <div>Tekanan Gas Normal: 0 - 2800 Pa</div>
+                                  <div>Suhu Normal: 20 - 35 C </div>
+                                  <div>pH Normal: 6.2 - 8.2</div>
+                                  <div>Tekanan Gas Normal: 0 - 7845 Pa</div>
                                 </div>}enterTouchDelay={0}>
                 <InfoOutlinedIcon color="disabled" />
                 </Tooltip>
