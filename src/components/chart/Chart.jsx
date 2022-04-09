@@ -72,8 +72,8 @@ export default function Chart({data}) {
         <h3 className="chartTitle">pH Slurry</h3>
             <ResponsiveContainer width="100%" aspect={4/1}>
                 <LineChart data={datapH}>
-                    <XAxis dataKey="Waktu" stroke="#355E3B"/>
-                    <YAxis stroke="#355E3B"/>
+                    <XAxis dataKey="Waktu" stroke="#355E3B" reversed='true'/>
+                    <YAxis stroke="#355E3B"/> 
                     <Line type="monotone" dataKey="pH" stroke="#008080"/>
                     <Tooltip/>
                     <CartesianGrid stroke="#e0dfdf" strokeDasharray="5 5"/>
