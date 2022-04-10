@@ -101,11 +101,9 @@ export default function Login() {
 const Wrapper = styled.div`
   @media (min-width: 1024px){
     background-image: url("https://frontendimages014.s3.ap-southeast-1.amazonaws.com/image.JPEG");
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1360px;
-    height: 450px;
+    background-position: 50% 50%;
  }
   @media (max-width: 1023px){
     background-color: #cbe8ba;
@@ -115,7 +113,7 @@ const Wrapper = styled.div`
 `;
 
 const PaperStyle = styled.div`
-  height: 410px;
+  height: 430px;
   width: 355px;
   padding: 20px;
   border-radius: 5px;
