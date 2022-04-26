@@ -49,7 +49,7 @@ console.log(data);
                         <Grid item>
                         <item>
                             <Tooltip title={<div>
-                                                <div>6.2 - 8.2 : Normal</div>
+                                                <div>6.5 - 8.2 : Normal</div>
                                             </div>} enterTouchDelay={0}>
                                 <InfoOutlinedIcon color="disabled" />
                             </Tooltip>
@@ -73,7 +73,7 @@ console.log(data);
                         <Grid item>
                         <item>
                             <Tooltip title={<div>
-                                                <div> 0 - 7.845 KPa : Normal</div>
+                                                <div> 0 - 7845 Pa : Normal</div>
                                             </div>} enterTouchDelay={0}>
                                 <InfoOutlinedIcon color="disabled" />
                             </Tooltip>

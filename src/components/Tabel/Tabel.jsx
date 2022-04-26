@@ -78,7 +78,7 @@ export default function Tabel({data}) {
               <DataInfo>
                 <Tooltip title={<div>
                                   <div>Suhu Normal: 20 - 35 C </div>
-                                  <div>pH Normal: 6.2 - 8.2</div>
+                                  <div>pH Normal: 6.5 - 8.2</div>
                                   <div>Tekanan Gas Normal: 0 - 7845 Pa</div>
                                 </div>}enterTouchDelay={0}>
                 <InfoOutlinedIcon color="disabled" />
