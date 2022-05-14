@@ -9,8 +9,8 @@ import { useEffect, useState } from 'react'
 
 const Graphic=()=>{
     const state=localStorage.getItem('dev_id');
-    console.log(state);
-    console.log('tes masuk graphic')
+    // console.log(state);
+    // console.log('tes masuk graphic')
 
     const [isFetched, setIsFetched] = useState(false);
 
@@ -23,14 +23,14 @@ const Graphic=()=>{
         "device_id": state
         }))
         .then((res)=>{
-            console.log(res.data);
-            console.log(res.data[0].device_data.time.slice(11,16));
-            console.log("test");
+            // console.log(res.data);
+            // console.log(res.data[0].device_data.time.slice(11,16));
+            // console.log("test");
             setDataParameter(res.data);
             setIsFetched(true);
         })
         .catch((err)=>{
-            console.log(err.response.data);
+            //console.log(err.response.data);
         })
         }
     },[isFetched,state]);

@@ -6,7 +6,7 @@ import ChipDesk from "./ChipDesk"
 import ChipMob from "./ChipMob"
 
 export default function Parameterinfo({data}) {
-console.log(data);
+// console.log(data);
 
   function formatDate(string){
     var options = { year: 'numeric', month: 'long', day: 'numeric' };

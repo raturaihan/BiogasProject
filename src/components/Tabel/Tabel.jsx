@@ -14,7 +14,7 @@ const RedText = withStyles({
 })(Typography);
 
 export default function Tabel({data}) {
-  console.log(data);
+  // console.log(data);
 
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);

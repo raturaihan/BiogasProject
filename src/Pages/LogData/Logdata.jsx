@@ -26,14 +26,14 @@ const Logdata=()=>{
       setIsFetched(false);
     };
 
-    console.log('tes masuk logdata');
-    console.log(value);
+    // console.log('tes masuk logdata');
+    // console.log(value);
     const [isFetched, setIsFetched] = useState(false);
     const [dataParameter, setDataParameter] = useState([]);
 
     const fetchData=(value)=>{
         const state=localStorage.getItem('dev_id');
-        console.log(state);
+        // console.log(state);
 
         axios.post('https://ehy3b0lyhk.execute-api.us-east-1.amazonaws.com/release/logdatabiogas', JSON.stringify({
             "device_id": state,
@@ -41,14 +41,14 @@ const Logdata=()=>{
             }))
             .then((res)=>{
                 if(res.data !== undefined) {
-                 console.log(res.data);
-                 console.log("test");
+                //  console.log(res.data);
+                //  console.log("test");
                  setDataParameter(res.data);
                  setIsFetched(true);
                 }
              })
             .catch((err)=>{
-                 console.log(err.response.data);
+                //  console.log(err.response.data);
             })
     }
 
