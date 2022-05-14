@@ -25,7 +25,7 @@ console.log(data);
                     <Grid item>
                     <item>
                         <Tooltip title={<div>
-                                            <div>20 - 35 C : Normal</div>
+                                            <div>20 - 35 &#8451; : Normal</div>
                                         </div>} enterTouchDelay={0}>
                             <InfoOutlinedIcon color="disabled" />
                         </Tooltip>
@@ -33,7 +33,7 @@ console.log(data);
                 </Grid>
                 <div className="parameterTitle">Suhu Slurry</div>
                 <div className="nilaiParameter">
-                    <span className="Data"> {data[data.length-1].device_data.temperatureValue.toFixed(2)} C</span>
+                    <span className="Data"> {data[data.length-1].device_data.temperatureValue.toFixed(2)} &#8451;</span>
                 </div>
                 <div><span className="tanggal">{formatDate(data[data.length-1].device_data.time.slice(0,10))}</span></div>
                 <span className="waktu"> {data[data.length-1].device_data.time.slice(11,16)}</span>
@@ -73,7 +73,7 @@ console.log(data);
                         <Grid item>
                         <item>
                             <Tooltip title={<div>
-                                                <div> 0 - 7845 Pa : Normal</div>
+                                                <div> 0 - 7.84 KPa : Normal</div>
                                             </div>} enterTouchDelay={0}>
                                 <InfoOutlinedIcon color="disabled" />
                             </Tooltip>
@@ -81,7 +81,7 @@ console.log(data);
                     </Grid>
                 <span className="parameterTitle">Tekanan Gas</span>
                 <div className="nilaiParameter">
-                    <span className="Data">{data[data.length-1].device_data.pressureValue.toFixed(2)}</span>
+                    <span className="Data">{data[data.length-1].device_data.pressureValue.toFixed(2)} KPa</span>
                 </div>
                 <div><span className="tanggal">{formatDate(data[data.length-1].device_data.time.slice(0,10))}</span></div>
                 <span className="waktu">{data[data.length-1].device_data.time.slice(11,16)}</span>

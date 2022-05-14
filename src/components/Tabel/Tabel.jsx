@@ -63,7 +63,7 @@ export default function Tabel({data}) {
           label: 'Tekanan\u00a0Gas',
           width: 100,
           align: 'right',
-          format: (value) => value < 0 || value > 7845 ? <RedText>{value.toFixed(2)}</RedText> : value.toFixed(2),
+          format: (value) => value < 0 || value > 7.845 ? <RedText>{value.toFixed(2)}</RedText> : value.toFixed(2),
         },
       ];
       
@@ -77,9 +77,9 @@ export default function Tabel({data}) {
               <item>
               <DataInfo>
                 <Tooltip title={<div>
-                                  <div>Suhu Normal: 20 - 35 C </div>
+                                  <div>Suhu Normal: 20 - 35 &#8451; </div>
                                   <div>pH Normal: 6.5 - 8.2</div>
-                                  <div>Tekanan Gas Normal: 0 - 7845 Pa</div>
+                                  <div>Tekanan Gas Normal: 0 - 7.84 KPa</div>
                                 </div>}enterTouchDelay={0}>
                 <InfoOutlinedIcon color="disabled" />
                 </Tooltip>
